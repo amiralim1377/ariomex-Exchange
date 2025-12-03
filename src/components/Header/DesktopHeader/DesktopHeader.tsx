@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import NavigationHeaderMenu from "../NavigationHeaderMenu/NavigationHeaderMenu";
 import LoginSignUpButton from "../LoginSignUpButton/LoginSignUpButton";
+import ModeToggle from "@/components/ModeToggle";
 
 export default function DesktopHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +31,7 @@ export default function DesktopHeader() {
 
         <section className="flex items-center gap-4">
           <LoginSignUpButton />
-          <span>دارک مود / لایت مود</span>
+          <ModeToggle />
           <span>زبان سایت</span>
         </section>
       </div>
