@@ -1,3 +1,4 @@
+import Header from "@/components/Header/Header";
 import "./globals.css";
 import vazirmatn from "@/fonts";
 
@@ -8,7 +9,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa">
-      <body className={vazirmatn.className}>{children}</body>
+      <body className={vazirmatn.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
