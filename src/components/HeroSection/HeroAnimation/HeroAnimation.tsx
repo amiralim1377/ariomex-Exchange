@@ -1,0 +1,24 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import lottie from "lottie-web";
+
+export default function HeroAnimation() {
+  const container = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!container.current) return;
+
+    const anim = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/animation/crypto.json",
+    });
+
+    return () => anim.destroy();
+  }, []);
+
+  return <div ref={container} className="w-[500px] h-[500px]"></div>;
+}

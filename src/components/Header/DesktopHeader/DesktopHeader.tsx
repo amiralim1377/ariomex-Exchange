@@ -4,13 +4,14 @@ import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import NavigationHeaderMenu from "../NavigationHeaderMenu/NavigationHeaderMenu";
 import LoginSignUpButton from "../LoginSignUpButton/LoginSignUpButton";
 import ModeToggle from "@/components/ModeToggle";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 export default function DesktopHeader() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 25);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -19,11 +20,11 @@ export default function DesktopHeader() {
 
   return (
     <header
-      className={`hidden lg:block sticky top-0 w-full z-50 transition-colors duration-500 backdrop-blur-md ${
+      className={`hidden bg-heroSection lg:block sticky top-0 w-full z-50 transition-colors duration-500 backdrop-blur-md ${
         scrolled ? "bg-black bg-opacity-90" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center p-6 justify-between">
+      <div className="flex items-center py-2 px-3 justify-between">
         <section className="flex items-center gap-4">
           <HeaderLogo scrolled={scrolled} />
           <NavigationHeaderMenu />
@@ -32,7 +33,7 @@ export default function DesktopHeader() {
         <section className="flex items-center gap-4">
           <LoginSignUpButton />
           <ModeToggle />
-          <span>زبان سایت</span>
+          <LanguageSwitcher />
         </section>
       </div>
     </header>

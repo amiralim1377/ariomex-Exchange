@@ -110,6 +110,43 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme {
+  --color-mainBrand: #1f73b7;
+  --color-mainBrandAlternative: #1da0f2;
+}
+
+.bg-heroSection {
+  --color-custom-gradient: linear-gradient(
+    90deg,
+    rgba(247, 248, 248, 1) 0%,
+    rgba(239, 243, 245, 1) 6%,
+    rgba(216, 229, 239, 1) 26%,
+    rgba(180, 206, 228, 1) 43%,
+    rgba(166, 198, 224, 1) 61%,
+    rgba(194, 216, 232, 1) 89%,
+    rgba(247, 248, 248, 1) 100%
+  );
+  background: var(--color-custom-gradient);
+}
+
+.dark .bg-heroSection {
+  --color-custom-gradient: linear-gradient(
+    90deg,
+    rgba(0, 9, 16, 1) 0%,
+    rgba(4, 22, 37, 1) 15%,
+    rgba(9, 41, 67, 1) 30%,
+    rgba(10, 45, 72, 1) 50%,
+    rgba(8, 37, 60, 1) 60%,
+    rgba(4, 21, 35, 1) 78%,
+    rgba(0, 9, 16, 1) 100%
+  );
+}
+
+.container {
+  @apply mx-auto px-4;
+  max-width: 1280px;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
