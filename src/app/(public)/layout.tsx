@@ -1,5 +1,5 @@
-import Header from "@/components/Header/Header";
-import "./globals.css";
+import Header from "@/components/Header";
+import "../globals.css";
 import vazirmatn from "@/fonts";
 
 export default function RootLayout({
@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa">
+    <html lang="fa" dir="rtl">
       <body className={vazirmatn.className}>
         <Header />
         {children}
