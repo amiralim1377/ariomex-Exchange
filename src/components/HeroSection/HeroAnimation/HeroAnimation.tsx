@@ -20,5 +20,10 @@ export default function HeroAnimation() {
     return () => anim.destroy();
   }, []);
 
-  return <div ref={container} className="w-[500px] h-[500px]"></div>;
+  return (
+    <div
+      ref={container}
+      className=" w-[300px] h-[300px] md:h-[500px] md:w-[500px]"
+    ></div>
+  );
 }
