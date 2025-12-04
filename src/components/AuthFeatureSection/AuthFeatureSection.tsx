@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function AuthFeatureSection() {
   return (
     <div className="bg-surfaceBg">
-      <div className="container flex flex-col-reverse    lg:flex-row lg:justify-between items-center">
+      <div className="container flex flex-col   lg:flex-row lg:justify-between items-center">
         <section className="">
           <Image
             src={"/AuthFeatureSection/kyc.svg"}
