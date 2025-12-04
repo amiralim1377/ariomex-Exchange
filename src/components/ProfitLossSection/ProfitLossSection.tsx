@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ProfitLossSection() {
   return (
-    <div className="bg-white">
+    <div className="bg-mainBg ">
       <div className="container flex flex-col-reverse    lg:flex-row lg:justify-between items-center">
         <section>
           <ExchangeFeatureSection
@@ -35,6 +35,8 @@ export default function ProfitLossSection() {
             height={210}
             width={350}
             alt="ProfitLossSection-svg"
+            layout="responsive"
+            sizes="(max-width: 768px) 100vw, 33vw"
           />
         </section>
       </div>

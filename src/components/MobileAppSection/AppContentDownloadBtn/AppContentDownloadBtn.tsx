@@ -21,7 +21,7 @@ export default function AppContentDownloadBtn() {
     <div className="flex gap-4 mt-4">
       {btn.map((item, i) => (
         <Link key={i} href={item.href}>
-          <button className="flex items-center cursor-pointer gap-2 px-6 py-1 border border-gray-50  text-white rounded  transition">
+          <button className="flex items-center cursor-pointer gap-2 px-6 py-1  border border-ring  text-muted-foreground rounded  transition">
             {item.icon}
             <span>{item.label}</span>
           </button>

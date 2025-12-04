@@ -30,7 +30,9 @@ export default function ExchangeFeatureSection({
         {features.map((feature, i) => (
           <div key={i} className="flex items-center gap-2 text-base">
             {feature.icon}
-            <p className="text-muted-foreground">{feature.text}</p>
+            <p className="text-muted-foreground text-sm text-nowrap md:text-base">
+              {feature.text}
+            </p>
           </div>
         ))}
       </div>

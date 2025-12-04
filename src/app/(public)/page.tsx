@@ -1,3 +1,4 @@
+import AuthFeatureSection from "@/components/AuthFeatureSection";
 import BannerSection from "@/components/BannerSection";
 import HeroSection from "@/components/HeroSection";
 import LatestBlogs from "@/components/LatestBlogs";
@@ -16,6 +17,7 @@ export default function Home() {
       <MobileAppSection />
       <ReferralProgram />
       <ProfitLossSection />
+      <AuthFeatureSection />
     </div>
   );
 }
