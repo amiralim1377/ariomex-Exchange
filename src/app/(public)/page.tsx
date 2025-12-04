@@ -1,5 +1,6 @@
 import AuthFeatureSection from "@/components/AuthFeatureSection";
 import BannerSection from "@/components/BannerSection";
+import FaqSection from "@/components/FaqSection/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import LatestBlogs from "@/components/LatestBlogs";
 import LatestCryptoCurrencyPrices from "@/components/LatestCryptoCurrencyPrices";
@@ -18,6 +19,7 @@ export default function Home() {
       <ReferralProgram />
       <ProfitLossSection />
       <AuthFeatureSection />
+      <FaqSection />
     </div>
   );
 }
