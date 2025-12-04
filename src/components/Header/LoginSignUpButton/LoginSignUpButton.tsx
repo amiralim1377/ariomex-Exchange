@@ -7,7 +7,7 @@ export default function LoginSignUpButton() {
     {
       label: "ورود",
       href: "/auth/login",
-      className: "border text-sm border-muted  px-5 py-1 rounded  transition",
+      className: "border text-sm border-ring  px-5 py-1 rounded  transition",
     },
     {
       label: "ثبت‌ نام",
