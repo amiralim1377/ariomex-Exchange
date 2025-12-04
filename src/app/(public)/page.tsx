@@ -7,6 +7,7 @@ import LatestCryptoCurrencyPrices from "@/components/LatestCryptoCurrencyPrices"
 import MobileAppSection from "@/components/MobileAppSection";
 import ProfitLossSection from "@/components/ProfitLossSection/ProfitLossSection";
 import ReferralProgram from "@/components/ReferralProgram";
+import SecurityFeatureCard from "@/components/SecurityFeatureCard/SecurityFeatureCard";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ProfitLossSection />
       <AuthFeatureSection />
       <FaqSection />
+      <SecurityFeatureCard />
     </div>
   );
 }
