@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import LatestBlogs from "@/components/LatestBlogs";
 import LatestCryptoCurrencyPrices from "@/components/LatestCryptoCurrencyPrices";
 import MobileAppSection from "@/components/MobileAppSection";
+import ProfitLossSection from "@/components/ProfitLossSection/ProfitLossSection";
 import ReferralProgram from "@/components/ReferralProgram";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <LatestCryptoCurrencyPrices />
       <MobileAppSection />
       <ReferralProgram />
+      <ProfitLossSection />
     </div>
   );
 }
