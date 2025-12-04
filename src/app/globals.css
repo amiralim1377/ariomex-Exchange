@@ -113,6 +113,7 @@
 @theme {
   --color-mainBrand: #1f73b7;
   --color-mainBrandAlternative: #1da0f2;
+  --color-secondaryBrand: #f7962d;
 }
 
 .bg-heroSection {
@@ -139,6 +140,45 @@
     rgba(8, 37, 60, 1) 60%,
     rgba(4, 21, 35, 1) 78%,
     rgba(0, 9, 16, 1) 100%
+  );
+}
+
+.bg-bannerSection {
+  background: #000104;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 1, 4, 1) 0%,
+    rgba(2, 5, 12, 1) 18%,
+    rgba(4, 9, 22, 1) 42%,
+    rgba(7, 14, 37, 1) 59%,
+    rgba(10, 19, 48, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 1, 4, 1) 0%,
+    rgba(2, 5, 12, 1) 18%,
+    rgba(4, 9, 22, 1) 42%,
+    rgba(7, 14, 37, 1) 59%,
+    rgba(10, 19, 48, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 1, 4, 1) 0%,
+    rgba(2, 5, 12, 1) 18%,
+    rgba(4, 9, 22, 1) 42%,
+    rgba(7, 14, 37, 1) 59%,
+    rgba(10, 19, 48, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000104", endColorstr="#0A1330", GradientType=1);
+}
+
+.dark .bg-bannerSection {
+  background: #fbfbfb;
+  background: linear-gradient(
+    90deg,
+    rgba(251, 251, 251, 1) 0%,
+    rgba(251, 251, 251, 1) 50%,
+    rgba(251, 251, 251, 1) 100%
   );
 }
 

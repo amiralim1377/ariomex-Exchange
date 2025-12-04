@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function NavigationHeaderMenu() {
   return (
     <NavigationMenu dir="rtl">
-      <NavigationMenuList className="flex-wrap">
+      <NavigationMenuList className="">
         {navigationMenuList.map((menuItem) => (
           <NavigationMenuItem key={menuItem.id}>
             {menuItem.hasSubMenu ? (

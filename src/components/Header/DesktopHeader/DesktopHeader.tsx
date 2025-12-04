@@ -20,8 +20,8 @@ export default function DesktopHeader() {
 
   return (
     <header
-      className={`hidden bg-heroSection lg:block sticky top-0 w-full z-50 transition-colors duration-500 backdrop-blur-md ${
-        scrolled ? "bg-black bg-opacity-90" : "bg-transparent"
+      className={`hidden lg:block sticky top-0 z-50 backdrop-blur-md transition-colors duration-500 ${
+        scrolled ? "bg-black/90" : "bg-heroSection"
       }`}
     >
       <div className="flex items-center py-2 px-3 justify-between">

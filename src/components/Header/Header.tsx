@@ -3,9 +3,9 @@ import MobileMenu from "./MobileMenu/MobileMenu";
 
 export default function Header() {
   return (
-    <header>
+    <div>
       <MobileMenu />
       <DesktopHeader />
-    </header>
+    </div>
   );
 }
