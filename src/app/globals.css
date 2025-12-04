@@ -57,6 +57,8 @@
     oklch(0.1724 0.0488 267.77) 59%,
     oklch(0.198 0.0592 267.74) 100%
   );
+
+  --guid-bg: url("/guid/lightbg.webp");
 }
 
 .dark {
@@ -110,6 +112,7 @@
     oklch(0.9881 0 0) 50%,
     oklch(0.9881 0 0) 100%
   );
+  --guid-bg: url("/guid/darkbg.webp");
 }
 
 @theme inline {
@@ -152,6 +155,7 @@
   --color-surfaceBg: var(--surfaceBg);
   --color-heroSection: var(--heroSection);
   --color-bannerSection: var(--heroSection);
+  --guid: var(--guid-bg);
 }
 
 @theme {
@@ -182,5 +186,11 @@
   }
   .bg-bannerSection {
     background: var(--bannerSection);
+  }
+  .guid {
+    background-image: var(--guid-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

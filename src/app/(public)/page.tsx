@@ -1,6 +1,7 @@
 import AuthFeatureSection from "@/components/AuthFeatureSection";
 import BannerSection from "@/components/BannerSection";
 import FaqSection from "@/components/FaqSection/FaqSection";
+import GuidanceSection from "@/components/GuidanceSection/GuidanceSection";
 import HeroSection from "@/components/HeroSection";
 import LatestBlogs from "@/components/LatestBlogs";
 import LatestCryptoCurrencyPrices from "@/components/LatestCryptoCurrencyPrices";
@@ -22,6 +23,7 @@ export default function Home() {
       <AuthFeatureSection />
       <FaqSection />
       <SecurityFeatureCard />
+      <GuidanceSection />
     </div>
   );
 }
