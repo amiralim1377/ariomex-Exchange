@@ -1,3 +1,3 @@
 export default function LatestBlogs() {
-  return <div>LatestBlogs</div>;
+  return <div className="bg-mainBg">LatestBlogs</div>;
 }

@@ -36,7 +36,27 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.708 0 0);
-  --color-mainBg: oklch(0.9784 0.0011 197.14);
+  --mainBg: oklch(0.9784 0.0011 197.14);
+  --surfaceBg: oklch(0.953 0.004 286.32);
+  --heroSection: linear-gradient(
+    90deg,
+    oklch(0.9784 0.0011 197.14) 0%,
+    oklch(0.9617 0.0051 228.82) 6%,
+    oklch(0.9151 0.0195 240.75) 26%,
+    oklch(0.8392 0.0417 243.79) 43%,
+    oklch(0.8117 0.0504 242.86) 61%,
+    oklch(0.8708 0.0324 239.41) 89%,
+    oklch(0.9784 0.0011 197.14) 100%
+  );
+
+  --bannerSection: linear-gradient(
+    90deg,
+    oklch(0.0676 0.0214 253.83) 0%,
+    oklch(0.1141 0.021 257.04) 18%,
+    oklch(0.1415 0.0305 262.8) 42%,
+    oklch(0.1724 0.0488 267.77) 59%,
+    oklch(0.198 0.0592 267.74) 100%
+  );
 }
 
 .dark {
@@ -71,7 +91,25 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.439 0 0);
-  --color-mainBg: oklch(0.1311 0.0265 231.09);
+  --mainBg: oklch(0.1311 0.0265 231.09);
+  --surfaceBg: oklch(0.1826 0.0164 244.73);
+  --heroSection: linear-gradient(
+    90deg,
+    oklch(0.1311 0.0265 231.09) 0%,
+    oklch(0.1935 0.0394 245.16) 15%,
+    oklch(0.2729 0.0607 247.19) 30%,
+    oklch(0.2878 0.0631 246.11) 50%,
+    oklch(0.2563 0.0552 246.35) 60%,
+    oklch(0.189 0.0374 244.54) 78%,
+    oklch(0.1311 0.0265 231.09) 100%
+  );
+
+  --bannerSection: linear-gradient(
+    90deg,
+    oklch(0.9881 0 0) 0%,
+    oklch(0.9881 0 0) 50%,
+    oklch(0.9881 0 0) 100%
+  );
 }
 
 @theme inline {
@@ -110,6 +148,10 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-mainBg: var(--mainBg);
+  --color-surfaceBg: var(--surfaceBg);
+  --color-heroSection: var(--heroSection);
+  --color-bannerSection: var(--heroSection);
 }
 
 @theme {
@@ -117,76 +159,11 @@
   --color-mainBrandAlternative: #1da0f2;
   --color-secondaryBrand: #f7962d;
   --color-successBg: #17e5a1;
-}
-
-.bg-heroSection {
-  --color-custom-gradient: linear-gradient(
-    90deg,
-    rgba(247, 248, 248, 1) 0%,
-    rgba(239, 243, 245, 1) 6%,
-    rgba(216, 229, 239, 1) 26%,
-    rgba(180, 206, 228, 1) 43%,
-    rgba(166, 198, 224, 1) 61%,
-    rgba(194, 216, 232, 1) 89%,
-    rgba(247, 248, 248, 1) 100%
-  );
-  background: var(--color-custom-gradient);
-}
-
-.dark .bg-heroSection {
-  --color-custom-gradient: linear-gradient(
-    90deg,
-    rgba(0, 9, 16, 1) 0%,
-    rgba(4, 22, 37, 1) 15%,
-    rgba(9, 41, 67, 1) 30%,
-    rgba(10, 45, 72, 1) 50%,
-    rgba(8, 37, 60, 1) 60%,
-    rgba(4, 21, 35, 1) 78%,
-    rgba(0, 9, 16, 1) 100%
-  );
-}
-
-.bg-bannerSection {
-  background: #000104;
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(0, 1, 4, 1) 0%,
-    rgba(2, 5, 12, 1) 18%,
-    rgba(4, 9, 22, 1) 42%,
-    rgba(7, 14, 37, 1) 59%,
-    rgba(10, 19, 48, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(0, 1, 4, 1) 0%,
-    rgba(2, 5, 12, 1) 18%,
-    rgba(4, 9, 22, 1) 42%,
-    rgba(7, 14, 37, 1) 59%,
-    rgba(10, 19, 48, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(0, 1, 4, 1) 0%,
-    rgba(2, 5, 12, 1) 18%,
-    rgba(4, 9, 22, 1) 42%,
-    rgba(7, 14, 37, 1) 59%,
-    rgba(10, 19, 48, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000104", endColorstr="#0A1330", GradientType=1);
-}
-
-.dark .bg-bannerSection {
-  background: #fbfbfb;
-  background: linear-gradient(
-    90deg,
-    rgba(251, 251, 251, 1) 0%,
-    rgba(251, 251, 251, 1) 50%,
-    rgba(251, 251, 251, 1) 100%
-  );
+  --color-new-accent: #848e9c;
 }
 
 .container {
-  @apply mx-auto px-4;
+  @apply mx-auto px-4 md:px-8;
   max-width: 1280px;
 }
 
@@ -196,5 +173,14 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .bg-heroSection {
+    background: var(--heroSection);
+  }
+  .bg-bannerSection {
+    background: var(--bannerSection);
   }
 }

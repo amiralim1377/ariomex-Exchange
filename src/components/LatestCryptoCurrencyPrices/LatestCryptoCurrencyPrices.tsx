@@ -1,3 +1,3 @@
 export default function LatestCryptoCurrencyPrices() {
-  return <div>LatestCryptoCurrencyPrices</div>;
+  return <div className="bg-mainBg">LatestCryptoCurrencyPrices</div>;
 }

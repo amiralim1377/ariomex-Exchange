@@ -4,7 +4,7 @@ import BannerText from "./BannerText/BannerText";
 export default function BannerSection() {
   return (
     <div className="bg-bannerSection    ">
-      <section className="container flex-col  lg:flex-row justify-between flex items-center">
+      <section className="container  flex-col  lg:flex-row justify-between flex items-center">
         <BannerAnimation />
         <BannerText />
       </section>
