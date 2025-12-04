@@ -1,16 +1,21 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 
 export default function HeaderLogo({ scrolled }: { scrolled: boolean }) {
+  const { resolvedTheme } = useTheme();
+
   return (
     <div>
       <Image
         src={
           scrolled
             ? "/logo/Ariomex-Dark-Logo.svg"
-            : "/logo/Ariomex-Light-Logo.svg"
+            : resolvedTheme !== "dark"
+            ? "/logo/Ariomex-Light-Logo.svg"
+            : "/logo/Ariomex-Dark-Logo.svg"
         }
-        width={120}
-        height={120}
+        width={150}
+        height={150}
         alt="logo"
       />
     </div>
