@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import Header from "@/components/Header";
-import "../globals.css";
+import "./globals.css";
 import vazirmatn from "@/fonts";
 
 export default function RootLayout({

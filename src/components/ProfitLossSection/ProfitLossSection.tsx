@@ -1,10 +1,11 @@
 import { IconChartLine, IconFileText } from "@tabler/icons-react";
 import ExchangeFeatureSection from "../ReusableComponents/ExchangeFeatureSection/ExchangeFeatureSection";
+import Image from "next/image";
 
 export default function ProfitLossSection() {
   return (
     <div className="bg-white">
-      <div className="container flex flex-col   lg:flex-row lg:justify-between items-center">
+      <div className="container flex flex-col-reverse    lg:flex-row lg:justify-between items-center">
         <section>
           <ExchangeFeatureSection
             title="سود یا زیان، اعداد مهم هستند"
@@ -28,7 +29,14 @@ export default function ProfitLossSection() {
             ]}
           />
         </section>
-        <section>2</section>
+        <section className="">
+          <Image
+            src={"/ProfitLossSection/pnl.svg"}
+            height={210}
+            width={350}
+            alt="ProfitLossSection-svg"
+          />
+        </section>
       </div>
     </div>
   );
