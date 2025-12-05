@@ -2,7 +2,7 @@ import FeatureCard from "../ReusableComponents/FeatureCard";
 
 export default function PlatformBenefits() {
   return (
-    <div className="bg-surfaceBg">
+    <div className="bg-surfaceBg py-6">
       <section className="container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <FeatureCard
           title="بازارهای تومان و تتر"

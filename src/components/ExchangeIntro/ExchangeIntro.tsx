@@ -8,7 +8,7 @@ export default function ExchangeIntro() {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="bg-mainBg">
+    <div className="bg-mainBg py-6">
       <section className="container">
         {!isVisible && (
           <div>

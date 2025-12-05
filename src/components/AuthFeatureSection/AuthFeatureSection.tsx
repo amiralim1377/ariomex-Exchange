@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function AuthFeatureSection() {
   return (
-    <div className="bg-surfaceBg">
+    <div className="bg-surfaceBg py-6">
       <div className="container flex flex-col   lg:flex-row lg:justify-between items-center">
         <div className="max-w-[200px] md:max-w-[400px]">
           <Image

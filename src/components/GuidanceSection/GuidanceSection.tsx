@@ -35,7 +35,7 @@ export default function GuidanceSection() {
     },
   ];
   return (
-    <div className="guid  ">
+    <div className="guid   py-6">
       <section className="container  w-full  grid   grid-cols-1    md:grid-cols-2  gap-y-10   ">
         {guidSteps.map((item, i) => (
           <div key={i} className="flex items-center gap-4 w-full">

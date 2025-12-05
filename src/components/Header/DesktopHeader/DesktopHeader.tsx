@@ -11,7 +11,7 @@ export default function DesktopHeader() {
 
   return (
     <header
-      className={`hidden lg:block sticky top-0 z-50 backdrop-blur-md transition-colors duration-500 ${
+      className={` lg:block sticky top-0 z-50 backdrop-blur-md transition-colors duration-500 ${
         scrolled ? "bg-black/90" : "bg-heroSection"
       }`}
     >

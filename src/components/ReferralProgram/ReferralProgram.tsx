@@ -4,7 +4,7 @@ import ReferralProgramSvg from "./ReferralProgramSvg/ReferralProgramSvg";
 
 export default function ReferralProgram() {
   return (
-    <div className="flex  bg-surfaceBg ">
+    <div className="flex  bg-surfaceBg py-6 ">
       <div className="container flex flex-col   lg:flex-row lg:justify-between items-center">
         <ReferralProgramSvg />
 

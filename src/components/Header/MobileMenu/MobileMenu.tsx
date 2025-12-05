@@ -1,9 +1,11 @@
+import HeaderLogo from "../HeaderLogo/HeaderLogo";
+
 export default function MobileMenu() {
   return (
-    <div className="flex lg:hidden">
+    <div className="flex justify-between lg:hidden">
       <div>hamburger-button-menu</div>
       <div>button-Login</div>
-      <div>logo</div>
+      <HeaderLogo />
     </div>
   );
 }

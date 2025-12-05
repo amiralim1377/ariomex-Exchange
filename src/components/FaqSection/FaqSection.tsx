@@ -4,7 +4,7 @@ import ReusableAccordion from "../ReusableComponents/ReusableAccordion/ReusableA
 
 export default function FaqSection() {
   return (
-    <div className="bg-mainBg">
+    <div className="bg-mainBg py-6">
       <div className="container">
         <section className="flex items-center gap-2">
           <IconSearch stroke={2} />

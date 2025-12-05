@@ -2,7 +2,7 @@ import FeatureCard from "../ReusableComponents/FeatureCard";
 
 export default function SecurityFeatureCard() {
   return (
-    <div className="bg-mainBg">
+    <div className="bg-mainBg py-6">
       <div className="container">
         <h2 className="md:text-3xl text-center md:text-right text-xl">
           امنیت در آریومکس

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ProfitLossSection() {
   return (
-    <div className="bg-mainBg ">
+    <div className="bg-mainBg py-6 ">
       <div className="container flex flex-col-reverse    lg:flex-row lg:justify-between items-center">
         <section>
           <ExchangeFeatureSection

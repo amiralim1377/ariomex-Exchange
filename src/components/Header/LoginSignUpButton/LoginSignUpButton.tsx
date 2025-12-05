@@ -10,7 +10,7 @@ export default function LoginSignUpButton() {
     {
       label: "ورود",
       href: "/auth/login",
-      className: `border text-sm border-ring   px-5 py-1 rounded  transition ${
+      className: `border hidden lg:block text-sm border-ring   px-5 py-1 rounded  transition ${
         scrolled ? "text-white" : "text-forgerand"
       }`,
     },
@@ -18,7 +18,7 @@ export default function LoginSignUpButton() {
       label: "ثبت‌ نام",
       href: "/auth/signup",
       className:
-        " bg-mainBrand text-white text-sm   px-5 py-1 rounded hover:bg-mainBrandAlternative transition",
+        " bg-mainBrand  text-white text-sm   px-5 py-1 rounded hover:bg-mainBrandAlternative transition",
     },
   ];
 

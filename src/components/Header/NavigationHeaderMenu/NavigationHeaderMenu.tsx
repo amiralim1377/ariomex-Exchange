@@ -15,40 +15,44 @@ import navigationMenuList from "@/data/navigationMenuList";
 
 export default function NavigationHeaderMenu() {
   return (
-    <NavigationMenu dir="rtl">
-      <NavigationMenuList className="flex-wrap">
-        {navigationMenuList.map((menuItem) => (
-          <NavigationMenuItem key={menuItem.id}>
-            {menuItem.hasSubMenu && menuItem.subMenu?.length ? (
-              <>
-                <NavigationMenuTrigger>{menuItem.label}</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-2 sm:w-20 md:w-[150px] lg:w-[200px]">
-                    {menuItem.subMenu.map((subItem, i) => (
-                      <ListItem
-                        key={i}
-                        title={subItem.label}
-                        content={subItem.content}
-                        href={subItem.href}
-                      />
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </>
-            ) : (
-              <NavigationMenuLink asChild>
-                <Link
-                  href={menuItem.href || "#"}
-                  className={navigationMenuTriggerStyle()}
-                >
-                  {menuItem.label}
-                </Link>
-              </NavigationMenuLink>
-            )}
-          </NavigationMenuItem>
-        ))}
-      </NavigationMenuList>
-    </NavigationMenu>
+    <div className="hidden lg:block">
+      <NavigationMenu dir="rtl">
+        <NavigationMenuList className="flex-wrap">
+          {navigationMenuList.map((menuItem) => (
+            <NavigationMenuItem key={menuItem.id}>
+              {menuItem.hasSubMenu && menuItem.subMenu?.length ? (
+                <>
+                  <NavigationMenuTrigger>
+                    {menuItem.label}
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid gap-2 sm:w-20 md:w-[150px] lg:w-[200px]">
+                      {menuItem.subMenu.map((subItem, i) => (
+                        <ListItem
+                          key={i}
+                          title={subItem.label}
+                          content={subItem.content}
+                          href={subItem.href}
+                        />
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </>
+              ) : (
+                <NavigationMenuLink asChild>
+                  <Link
+                    href={menuItem.href || "#"}
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    {menuItem.label}
+                  </Link>
+                </NavigationMenuLink>
+              )}
+            </NavigationMenuItem>
+          ))}
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 }
 
