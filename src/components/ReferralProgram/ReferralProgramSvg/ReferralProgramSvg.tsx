@@ -9,7 +9,6 @@ export default function ReferralProgramSvg() {
         height={210}
         alt="ReferralProgramSvg"
         sizes="(max-width: 700px) 100vw, 700px"
-        layout="responsive"
       />
     </div>
   );

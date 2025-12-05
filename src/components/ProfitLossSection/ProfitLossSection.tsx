@@ -35,7 +35,6 @@ export default function ProfitLossSection() {
             height={210}
             width={350}
             alt="ProfitLossSection-svg"
-            layout="responsive"
             sizes="(max-width: 768px) 100vw, 33vw"
           />
         </div>
