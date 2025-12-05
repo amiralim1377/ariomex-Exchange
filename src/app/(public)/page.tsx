@@ -1,12 +1,9 @@
-import ArticlesSection from "@/components/ArticlesSection/ArticlesSection";
 import AuthFeatureSection from "@/components/AuthFeatureSection";
 import BannerSection from "@/components/BannerSection";
 import ExchangeIntro from "@/components/ExchangeIntro";
 import FaqSection from "@/components/FaqSection/FaqSection";
 import GuidanceSection from "@/components/GuidanceSection/GuidanceSection";
 import HeroSection from "@/components/HeroSection";
-import LatestBlogs from "@/components/LatestBlogs";
-import LatestCryptoCurrencyPrices from "@/components/LatestCryptoCurrencyPrices";
 import MobileAppSection from "@/components/MobileAppSection";
 import PlatformBenefits from "@/components/PlatformBenefits";
 import ProfitLossSection from "@/components/ProfitLossSection";
@@ -18,8 +15,8 @@ export default function Home() {
     <div className="">
       <HeroSection />
       <BannerSection />
-      <LatestBlogs />
-      <LatestCryptoCurrencyPrices />
+      {/* <LatestBlogs /> */}
+      {/* <LatestCryptoCurrencyPrices /> */}
       <MobileAppSection />
       <ReferralProgram />
       <ProfitLossSection />
@@ -27,7 +24,7 @@ export default function Home() {
       <FaqSection />
       <SecurityFeatureCard />
       <GuidanceSection />
-      <ArticlesSection />
+      {/* <ArticlesSection /> */}
       <PlatformBenefits />
       <ExchangeIntro />
     </div>

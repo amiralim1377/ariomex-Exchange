@@ -56,8 +56,10 @@ export default function FooterApp() {
       <div className="flex flex-row flex-wrap gap-3 mt-3">
         {appLogo.map((item) => (
           <Link key={item.id} href={item.href}>
-            <div className="inline-flex items-center gap-1 bg-mainBrand/50 hover:bg-mainBrand px-2 py-1 rounded-md  transition duration-300 ease-in-out transform hover:scale-105">
-              <p className="text-xs whitespace-nowrap">{item.label}</p>
+            <div className="inline-flex items-center gap-1 bg-mainBrand/20 hover:bg-mainBrand px-2 py-1 rounded-md  transition duration-300 ease-in-out transform hover:scale-105">
+              <p className="text-xs text-mainBrand whitespace-nowrap">
+                {item.label}
+              </p>
               <Image src={item.icon} width={12} height={12} alt={item.label} />
             </div>
           </Link>

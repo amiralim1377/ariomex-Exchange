@@ -21,7 +21,9 @@ export default function FooterColumns() {
       {footerContentList.map((footerItem) => {
         return (
           <div key={footerItem.id} className="flex flex-col gap-3">
-            <h3 className="font-bold text-lg">{footerItem.footerTitle}</h3>
+            <h3 className="font-bold text-foreground text-lg">
+              {footerItem.footerTitle}
+            </h3>
 
             {footerItem.hasFooterContent &&
               footerItem.footerContent.length > 0 && (
@@ -51,7 +53,12 @@ export default function FooterColumns() {
                         target="_blank"
                         className="hover:text-gray-300 transition-all"
                       >
-                        {IconComponent && <IconComponent size={24} />}
+                        {IconComponent && (
+                          <IconComponent
+                            className="text-foreground"
+                            size={24}
+                          />
+                        )}
                       </Link>
                     );
                   })}
