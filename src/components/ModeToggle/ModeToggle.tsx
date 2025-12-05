@@ -16,7 +16,7 @@ function ModeToggle() {
   const { setTheme } = useTheme();
 
   return (
-    <div className="hidden lg:block">
+    <div className="">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">
