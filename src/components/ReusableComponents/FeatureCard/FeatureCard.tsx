@@ -7,7 +7,7 @@ export default function FeatureCard({
   description,
 }: FeatureCardProps) {
   return (
-    <div className="flex flex-col items-center text-center gap-2 p-4">
+    <div className="flex flex-col items-center text-center gap-2 p-4 transition duration-300 ease-in-out transform hover:scale-105">
       <div className="mb-2">
         <Image src={icon} width={80} height={80} alt={title} />
       </div>
