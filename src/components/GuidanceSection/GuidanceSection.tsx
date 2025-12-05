@@ -1,7 +1,14 @@
 import Image from "next/image";
 
+type GuideStep = {
+  icon: string;
+  id: number;
+  title: string;
+  description: string;
+};
+
 export default function GuidanceSection() {
-  const guidSteps = [
+  const guidSteps: GuideStep[] = [
     {
       icon: "/guid/guide1.svg",
       id: 1,
