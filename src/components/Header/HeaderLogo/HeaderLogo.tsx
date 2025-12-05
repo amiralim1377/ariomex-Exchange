@@ -1,7 +1,10 @@
+import { useScroll } from "@/context/ScrollContext";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
-export default function HeaderLogo({ scrolled }: { scrolled: boolean }) {
+export default function HeaderLogo() {
+  const { scrolled } = useScroll();
+
   const { resolvedTheme } = useTheme();
 
   return (

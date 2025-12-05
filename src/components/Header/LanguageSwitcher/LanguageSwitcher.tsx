@@ -1,8 +1,15 @@
+import { useScroll } from "@/context/ScrollContext";
 import { IconWorld } from "@tabler/icons-react";
 export default function LanguageSwitcher() {
+  const { scrolled } = useScroll();
+
   return (
     <div>
-      <IconWorld stroke={2} />
+      {scrolled ? (
+        <IconWorld color="white" stroke={2} />
+      ) : (
+        <IconWorld stroke={2} />
+      )}
     </div>
   );
 }
