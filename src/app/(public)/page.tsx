@@ -1,6 +1,7 @@
 import ArticlesSection from "@/components/ArticlesSection/ArticlesSection";
 import AuthFeatureSection from "@/components/AuthFeatureSection";
 import BannerSection from "@/components/BannerSection";
+import ExchangeIntro from "@/components/ExchangeIntro";
 import FaqSection from "@/components/FaqSection/FaqSection";
 import GuidanceSection from "@/components/GuidanceSection/GuidanceSection";
 import HeroSection from "@/components/HeroSection";
@@ -28,6 +29,7 @@ export default function Home() {
       <GuidanceSection />
       <ArticlesSection />
       <PlatformBenefits />
+      <ExchangeIntro />
     </div>
   );
 }
