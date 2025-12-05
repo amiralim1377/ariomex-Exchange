@@ -23,7 +23,7 @@ export default function HeroAnimation() {
   return (
     <div
       ref={container}
-      className=" w-[300px] h-[300px] md:h-[500px] md:w-[500px]  lg:w-[600px] lg:h-[600px]"
+      className=" w-[300px] h-[300px] md:h-[350px] md:w-[350px]  lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]"
     ></div>
   );
 }

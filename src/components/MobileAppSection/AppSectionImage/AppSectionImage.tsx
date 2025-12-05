@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AppSectionImage() {
   return (
-    <div>
+    <div className="max-w-[350px]  md:max-w-[450px] lg:max-w-[650px]">
       <Image
         src={"/MobileAppSection/mobile.webp"}
         width={550}

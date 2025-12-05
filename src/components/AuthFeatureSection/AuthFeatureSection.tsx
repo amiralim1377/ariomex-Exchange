@@ -11,7 +11,7 @@ export default function AuthFeatureSection() {
   return (
     <div className="bg-surfaceBg">
       <div className="container flex flex-col   lg:flex-row lg:justify-between items-center">
-        <section className="">
+        <div className="max-w-[200px] md:max-w-[400px]">
           <Image
             src={"/AuthFeatureSection/kyc.svg"}
             height={210}
@@ -20,7 +20,7 @@ export default function AuthFeatureSection() {
             layout="responsive"
             sizes="(max-width: 768px) 100vw, 33vw"
           />
-        </section>
+        </div>
         <section>
           <ExchangeFeatureSection
             title="در کمتر از 5 دقیقه شروع کنید"
