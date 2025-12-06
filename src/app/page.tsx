@@ -1,3 +1,4 @@
+"use client";
 import AuthFeatureSection from "@/components/AuthFeatureSection";
 import BannerSection from "@/components/BannerSection";
 import ExchangeIntro from "@/components/ExchangeIntro";
@@ -15,8 +16,7 @@ export default function Home() {
     <div className="">
       <HeroSection />
       <BannerSection />
-      {/* <LatestBlogs /> */}
-      {/* <LatestCryptoCurrencyPrices /> */}
+
       <MobileAppSection />
       <ReferralProgram />
       <ProfitLossSection />
@@ -24,7 +24,6 @@ export default function Home() {
       <FaqSection />
       <SecurityFeatureCard />
       <GuidanceSection />
-      {/* <ArticlesSection /> */}
       <PlatformBenefits />
       <ExchangeIntro />
     </div>
