@@ -14,7 +14,7 @@ export default function HeroAnimation() {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: "/animation/crypto.json",
+      path: "./animation/crypto.json",
     });
 
     return () => anim.destroy();

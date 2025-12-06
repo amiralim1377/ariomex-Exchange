@@ -13,10 +13,10 @@ export default function HeaderLogo() {
       <Image
         src={
           scrolled
-            ? "/logo/Ariomex-Dark-Logo.svg"
+            ? "./logo/Ariomex-Dark-Logo.svg"
             : resolvedTheme !== "dark"
-            ? "/logo/Ariomex-Light-Logo.svg"
-            : "/logo/Ariomex-Dark-Logo.svg"
+            ? "./logo/Ariomex-Light-Logo.svg"
+            : "./logo/Ariomex-Dark-Logo.svg"
         }
         width={150}
         height={150}
