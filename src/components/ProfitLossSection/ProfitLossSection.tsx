@@ -31,7 +31,7 @@ export default function ProfitLossSection() {
         </section>
         <div className="max-w-[200px] md:max-w-[400px]">
           <Image
-            src={"/ProfitLossSection/pnl.svg"}
+            src={"./ProfitLossSection/pnl.svg"}
             height={210}
             width={350}
             alt="ProfitLossSection-svg"

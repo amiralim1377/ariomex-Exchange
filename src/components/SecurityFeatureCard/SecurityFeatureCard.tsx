@@ -11,22 +11,22 @@ export default function SecurityFeatureCard() {
           <FeatureCard
             title="نگهداری امن دارایی‌ها"
             description="نگهداری 99 درصد دارایی‌ها در کیف پول سرد-Cold Wallet"
-            icon="/SecurityFeatureCard/secure.svg"
+            icon="./SecurityFeatureCard/secure.svg"
           />
           <FeatureCard
             title="نگهداری امن دارایی‌ها"
             description="نگهداری 99 درصد دارایی‌ها در کیف پول سرد-Cold Wallet"
-            icon="/SecurityFeatureCard/secure2.svg"
+            icon="./SecurityFeatureCard/secure2.svg"
           />
           <FeatureCard
             title="نگهداری امن دارایی‌ها"
             description="نگهداری 99 درصد دارایی‌ها در کیف پول سرد-Cold Wallet"
-            icon="/SecurityFeatureCard/secure3.svg"
+            icon="./SecurityFeatureCard/secure3.svg"
           />
           <FeatureCard
             title="نگهداری امن دارایی‌ها"
             description="نگهداری 99 درصد دارایی‌ها در کیف پول سرد-Cold Wallet"
-            icon="/SecurityFeatureCard/secure4.svg"
+            icon="./SecurityFeatureCard/secure4.svg"
           />
         </section>
       </div>

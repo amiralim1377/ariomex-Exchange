@@ -4,7 +4,7 @@ export default function AppContentQRCode() {
   return (
     <div>
       <Image
-        src={"/MobileAppSection/QR-code.png"}
+        src={"./MobileAppSection/QR-code.png"}
         height={190}
         width={190}
         alt="QR-code"

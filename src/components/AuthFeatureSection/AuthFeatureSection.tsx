@@ -13,7 +13,7 @@ export default function AuthFeatureSection() {
       <div className="container flex flex-col   lg:flex-row lg:justify-between items-center">
         <div className="max-w-[200px] md:max-w-[400px]">
           <Image
-            src={"/AuthFeatureSection/kyc.svg"}
+            src={"./AuthFeatureSection/kyc.svg"}
             height={210}
             width={350}
             alt="ProfitLossSection-svg"

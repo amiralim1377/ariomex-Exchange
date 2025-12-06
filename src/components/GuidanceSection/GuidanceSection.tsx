@@ -10,25 +10,25 @@ type GuideStep = {
 export default function GuidanceSection() {
   const guidSteps: GuideStep[] = [
     {
-      icon: "/guid/guide1.svg",
+      icon: "./guid/guide1.svg",
       id: 1,
       title: "ایجاد حساب کاربری آریومکس",
       description: "همانند حرفه‌ای‌ها معامله کنید",
     },
     {
-      icon: "/guid/guide2.svg",
+      icon: "./guid/guide2.svg",
       id: 2,
       title: "تکمیل احراز هویت",
       description: "با تکمیل احراز هویت دسترسی کامل داشته باشید",
     },
     {
-      icon: "/guid/guide3.svg",
+      icon: "./guid/guide3.svg",
       id: 3,
       title: "اقدام به واریز نمایید",
       description: "حساب خود را شارژ کنید و معامله نمایید",
     },
     {
-      icon: "/guid/guide4.svg",
+      icon: "./guid/guide4.svg",
       id: 4,
       title: "شروع به معامله کنید",
       description: "خرید یا فروش رمزارز",
