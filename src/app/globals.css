@@ -58,7 +58,7 @@
     oklch(0.198 0.0592 267.74) 100%
   );
 
-  --guid-bg: url("/guid/lightbg.webp");
+  --guid-bg: url("../asset/guidBg/lightbg.webp");
 }
 
 .dark {
@@ -112,7 +112,7 @@
     oklch(0.9881 0 0) 50%,
     oklch(0.9881 0 0) 100%
   );
-  --guid-bg: url("/guid/darkbg.webp");
+  --guid-bg: url("../asset/guidBg/darkbg.webp");
 }
 
 @theme inline {
