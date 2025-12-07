@@ -1,10 +1,16 @@
 "use client";
-import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import NavigationHeaderMenu from "../NavigationHeaderMenu/NavigationHeaderMenu";
 import LoginSignUpButton from "../LoginSignUpButton/LoginSignUpButton";
 import ModeToggle from "@/components/ModeToggle";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useScroll } from "@/context/ScrollContext";
+import dynamic from "next/dynamic";
+const HeaderLogo = dynamic(
+  () => import("@/components/Header/HeaderLogo/HeaderLogo"),
+  {
+    ssr: false,
+  }
+);
 
 export default function DesktopHeader() {
   const { scrolled } = useScroll();
