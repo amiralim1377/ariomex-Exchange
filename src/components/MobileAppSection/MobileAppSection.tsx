@@ -10,7 +10,7 @@ export default function MobileAppSection() {
 
   return (
     <div ref={ref} className="bg-mainBg  py-6   ">
-      <section className=" container   flex flex-col-reverse lg:flex-row items-center  lg:items-start  justify-between">
+      <section className=" container   flex flex-col-reverse lg:flex-row items-center  lg:items-center  justify-between">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : {}}
