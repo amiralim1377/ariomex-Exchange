@@ -48,7 +48,7 @@ export default function FooterApp() {
   ];
   return (
     <div className="space-y-3 mt-5">
-      <p className="text-sm">دانلود اپلیکیشن آریومکس</p>
+      <p className="text-sm text-muted-foreground">دانلود اپلیکیشن آریومکس</p>
       <p className="text-muted-foreground text-xs">
         هر آنچه که در بازارهای معاملاتی نیاز دارید
       </p>
